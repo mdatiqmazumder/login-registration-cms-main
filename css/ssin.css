@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #19c7ca;
+  padding: 0 10px;
+}
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 4px 6px 74px rgb(0 0 0 / 13%);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #19c7ca;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #000000;
+   margin-right: 10px;
+   font-size: 14px;
+}
+
+.wrapper .form .inputfield .input{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .input:focus{
+  border: 1px solid #1b1b1b;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background: #19c7ca;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #383434;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+.signup_link {
+  margin-top: 4%;
+}
+
+.signup_link a {
+  text-decoration: none;
+  color: #ff1b0c;
+}
+.error {
+  background: #fff0f0;
+  border: 1px solid #ff2f2f;
+  border-radius: 4px;
+  padding: 10px;
+  color: #c63636;
+  margin-bottom: 16px;
+}
+.success {
+  background: #ecfaf1;
+  border: 1px solid #0e7e34;
+  border-radius: 4px;
+  padding: 10px;
+  color: green;
+  margin-bottom: 16px;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
